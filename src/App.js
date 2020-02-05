@@ -3,7 +3,9 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import MainBar from "./components/MainBar";
 import HomePage from "./components/Home";
-import Footer from "./components/About";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Sights from "./components/Sights";
 
 export default function App() {
   return (
@@ -15,10 +17,16 @@ export default function App() {
             <HomePage/>
           </Route>
           <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/sights">
+            <Sights />
+          </Route>
+          <Route path="/other">
           </Route>
         </Switch>
+        <Footer/>
       </div>
-      <Footer/>
     </Router>
   );
 }

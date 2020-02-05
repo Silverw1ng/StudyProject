@@ -3,20 +3,12 @@
     text-align: center;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-.App-header {
-   display: flex;
-    align-items: center;
-}
-
 .header {
     display: flex;
     justify-content: space-around;
-    background-color: burlywood;
+    align-items: center;
+    background-color: #fffc32;
+    height: 50px;
 }
 
 .menu-link {
@@ -33,15 +25,14 @@
 }
 
 .footer {
-    padding: 32px;
     text-align: center;
     opacity: 0.45;
-    margin-top: auto;
     cursor: default;
+    margin-top: auto;
 }
 
 .main-container {
-    background-image: url("https://yarnovosti.com/gallery/news/2019/09/93418/besedka.jpg");
+    /*background-image:*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,6 +43,16 @@
 }
 
 .home {
+    display: flex;
+    justify-content: space-around;
+}
+.image {
+    float: left;
+    width: 50%;
+}
 
+.text {
+    float: right;
+    width: 50%;
 }
 
