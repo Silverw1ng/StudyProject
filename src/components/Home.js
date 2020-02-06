@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
+import Figure from "react-bootstrap/Figure";
 
 const styles = require('./Styling.css');
 
@@ -15,7 +16,14 @@ export default function HomePage() {
     <Container>
       <Row>
         <Col sm={5}>
-          <Image src="yaroslavl.gif" />
+          <Figure>
+            <Figure.Image
+              src="yaroslavl.gif"
+            />
+            <Figure.Caption>
+              Герб Ярославля
+            </Figure.Caption>
+          </Figure>
         </Col>
         <Col sm={7}>
           {info}

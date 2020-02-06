@@ -26,6 +26,12 @@ export default function App() {
           <Route path="/all">
             <AllTowns />
           </Route>
+          <Route path="/Myshkin>"></Route>
+          <Route path="/Tutaev>"></Route>
+          <Route path="/Rybinsk>"></Route>
+          <Route path="/Uglich>"></Route>
+          <Route path="/Rostov>"></Route>
+          <Route path="/Pereslavl>"></Route>
         </Switch>
         <Footer/>
       </div>

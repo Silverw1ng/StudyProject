@@ -56,3 +56,24 @@
     width: 50%;
 }
 
+.image {
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.rostov-image {
+    /*background-image:*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-deck {
+    margin-top: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
