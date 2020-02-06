@@ -6,6 +6,7 @@ import HomePage from "./components/Home";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Sights from "./components/Sights";
+import AllTowns from './components/AllTowns';
 
 export default function App() {
   return (
@@ -22,7 +23,8 @@ export default function App() {
           <Route path="/sights">
             <Sights />
           </Route>
-          <Route path="/other">
+          <Route path="/all">
+            <AllTowns />
           </Route>
         </Switch>
         <Footer/>
