@@ -11,30 +11,30 @@ import AllTowns from './components/AllTowns';
 export default function App() {
   return (
     <Router>
-      <div className="main-container">
-        <MainBar/>
-        <Switch>
-          <Route exact path="/">
-            <HomePage/>
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/sights">
-            <Sights />
-          </Route>
-          <Route path="/all">
-            <AllTowns />
-          </Route>
-          <Route path="/Myshkin>"></Route>
-          <Route path="/Tutaev>"></Route>
-          <Route path="/Rybinsk>"></Route>
-          <Route path="/Uglich>"></Route>
-          <Route path="/Rostov>"></Route>
-          <Route path="/Pereslavl>"></Route>
-        </Switch>
-        <Footer/>
-      </div>
+      <Switch>
+        <div className="main-container">
+          <MainBar/>
+            <Route exact path="/">
+              <HomePage/>
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/sights">
+              <Sights />
+            </Route>
+            <Route path="/all">
+              <AllTowns />
+            </Route>
+            <Route path="/Myshkin>"></Route>
+            <Route path="/Tutaev>"></Route>
+            <Route path="/Rybinsk>"></Route>
+            <Route path="/Uglich>"></Route>
+            <Route path="/Rostov>"></Route>
+            <Route path="/Pereslavl>"></Route>
+          <Footer/>
+        </div>
+      </Switch>
     </Router>
   );
 }
