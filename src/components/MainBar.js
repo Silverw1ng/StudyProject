@@ -7,7 +7,7 @@ import { NavDropdown } from "react-bootstrap";
 export default function MainBar() {
     return(
       <div>
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" expand="md">
           <Navbar.Brand as={Link} to="/">Главная</Navbar.Brand>
           <Nav>
             <Nav.Link as={Link} to="/sights">Достопримечательности</Nav.Link>

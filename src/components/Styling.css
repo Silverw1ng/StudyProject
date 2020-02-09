@@ -45,6 +45,7 @@
 
 .carousel-image{
     width: 100%;
+    display: block;
     height: 90vh;
 }
 
