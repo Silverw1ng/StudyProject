@@ -4,9 +4,10 @@ import Sight from "../shared/Sight";
 
 const sights = require('../sights');
 
+
 export default class Sights extends React.Component{
-  constructor(props) {
-    super(props);
+  componentDidMount() {
+    console.log("Хуй для Сержа");
   }
   render() {
     return(
