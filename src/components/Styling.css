@@ -58,7 +58,7 @@
     display: flex;
     justify-content: space-between;
     border-radius: 5px;
-    width: 1200px;
+    width: 70%;
     margin: auto;
     padding: 10px 50px;
     background: white;
@@ -112,14 +112,14 @@
 }
 
 .accordion__heading {
-    width: 800px;
+    width: 100%;
 }
 
 .town {
     display: flex;
-    border-radius: 5px;
-    width: 1200px;
-    min-height: 800px;
+    flex-direction: column;
+    width: 71%;
+    min-height: 76%;
     margin: auto;
     padding: 30px 50px;
     background: white;
