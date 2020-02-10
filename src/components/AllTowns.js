@@ -11,23 +11,27 @@ export default class AllTowns extends React.Component {
   }
   render() {
     return(
-      <CardDeck bsPrefix="card-deck">
-        {towns.map((item) => {
-          return (
-            <React.Fragment>
-              <Card key={item.id}>
-                <Card.Body>
-                  <Card.Header>{item.title}</Card.Header>
-                  <Link to={item.link}>
-                    <Card.Img variant="top" src={item.image}/>
-                  </Link>              
-                  <Card.Text>{item.text}</Card.Text>
-                </Card.Body>
-              </Card>
-            </React.Fragment>
-          );
-        })}
-      </CardDeck>
+      <div style={{ margin: "auto" }}>
+        <CardDeck>
+          {towns.map((item) => {
+            return (
+              <>
+                <div className="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                  <Card key={item.id}>
+                    <Card.Body>
+                      <Card.Header>{item.title}</Card.Header>
+                      <Link to={item.link}>
+                        <Card.Img variant="top" src={item.image}/>
+                      </Link>
+                      <Card.Text>{item.text}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              </>
+            );
+          })}
+        </CardDeck>
+      </div>
     );
   }
 }
